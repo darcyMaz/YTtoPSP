@@ -1,0 +1,3 @@
+[submodule "podhnologic"]
+	path = podhnologic
+	url = https://github.com/jmonster/podhnologic.git
