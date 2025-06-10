@@ -49,7 +49,8 @@
 [![Python][python-img]][python-url]
 [![Mutagen][mutagen-img]][mutagen-link]
 [![PyTube][pytubefix-img]][pytubefix-link]
-[![podhnologic][podhnologic-img]][podhnologic-link]
+
+<p>[![podhnologic][podhnologic-img]][podhnologic-link] </p>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
