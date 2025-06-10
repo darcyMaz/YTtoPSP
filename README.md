@@ -49,6 +49,7 @@
 [![Python][python-img]][python-url]
 [![Mutagen][mutagen-img]][mutagen-link]
 [![PyTube][pytubefix-img]][pytubefix-link]
+[![podhnologic][podhnologic-img]][podhnologic-link]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -189,4 +190,6 @@ jmonster's podhnologic project: [https://github.com/jmonster/podhnologic/tree/ba
 [mutagen-img]: https://pypi-camo.freetls.fastly.net/b1c76ddde4aec66388fb18b99e7029731bbf1aec/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f71756f646c696265742f6d75746167656e2f6d61737465722f646f63732f696d616765732f6c6f676f2e737667
 [pytubefix-link]: https://pypi.org/project/pytubefix
 [pytubefix-img]: https://pypi-camo.freetls.fastly.net/42d43def1c8634a6c158def4846894bc2afd542b/68747470733a2f2f6173736574732e6e69636b666963616e6f2e636f6d2f67682d7079747562652e6d696e2e737667
+[podhnologic-link]: https://github.com/jmonster/podhnologic/tree/ba7279581ced07b4f9a55d6289fc605e8e9525ea
+[podhnologic-img]: https://private-user-images.githubusercontent.com/368767/352676369-a9383166-c1e6-432e-9658-9044b13725bc.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk1ODgzODIsIm5iZiI6MTc0OTU4ODA4MiwicGF0aCI6Ii8zNjg3NjcvMzUyNjc2MzY5LWE5MzgzMTY2LWMxZTYtNDMyZS05NjU4LTkwNDRiMTM3MjViYy5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxMFQyMDQxMjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMGY2ZmVlZjk0ZTAyOTFhOWUyYzYwYzdhNGM2Zjc5NmU0ZjM4Mzg2YmU3MDBjNzg4NmIyZDlmOTY2OWQ3NTMxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.BTtwnMLHs9pV_L4SjlSiMjeoTLLtVLdcUyDs3Ys7oXA
 
