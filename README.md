@@ -1,43 +1,16 @@
-# YTtoPSP
-A project which allows the user to download audio from YouTube videos in a format playable on PSP, sorted by track number, which includes neccesary metadata.
-
 <a id="readme-top"></a>
 
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![project_license][license-shield]][license-url]
-
 <!-- PROJECT LOGO -->
-<br />
+  
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center"> YTtoPSP </h3>
 
   <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    &middot;
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    &middot;
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    A project which allows the user to download audio from YouTube videos in a format playable on PSP, sorted by track number, which includes neccesary metadata.
+      
+      
+      
   </p>
 </div>
 
@@ -132,7 +105,7 @@ Let's get started then.
 1. Clone the repo
 * Create a workspace in your computer where you can have your local coding projects. Open that folder in the terminal, in VSCode, or whatever IDE you use for Python and type this command into the terminal.
 
-It is critical that you have the recursive tag so that the submodule can be downloaded.
+* It is critical that you have the recursive tag so that the submodule can be downloaded.
 
    ```sh
    git clone --recursive https://github.com/darcyMaz/YTtoPSP
@@ -140,8 +113,8 @@ It is critical that you have the recursive tag so that the submodule can be down
 
 2. A - Create the Python environment for this project.
 * Creating your Python environment can be done in different ways. I link two guides below, one that does it via the terminal and one that does it from VSCode. If you want or need to do it a different way, there are plenty of guides to choose from on the internet.  
-* <a href="https://www.w3schools.com/python/python_virtualenv.asp"> Python Environment: Terminal * </a>  
-<a href="https://code.visualstudio.com/docs/python/environments"> Python Environment: VSCode </a>  
+* <a href="https://www.w3schools.com/python/python_virtualenv.asp"> Python Environment: Terminal </a>  
+* <a href="https://code.visualstudio.com/docs/python/environments"> Python Environment: VSCode </a>  
   
 2. B - Use the global environment.
 * You don't need to create an environment for your project, especially since this project has only two packages (for now). What you would do instead is, after cloning the repo, type these two commands into the terminal. You will have the packages in the global environment from now on.
