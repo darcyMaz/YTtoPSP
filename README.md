@@ -108,23 +108,17 @@ Let's get started then.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 1. Python 3
 * You will need to have Python 3 downloaded on your computer. There are many installation guides including the one at python.org so if you have no coding experience, this is a great place to start getting familiar with Python and your computer. And make sure to add it to path (environement variables) when downloading!  
   
 <a href="https://www.python.org/downloads/"> Download Python here. </a>  
-<a href="https://www.digitalocean.com/community/tutorials/install-python-windows-10"> A download guide can be found here. </a> 
+<a href="https://www.digitalocean.com/community/tutorials/install-python-windows-10"> Python download guide </a> 
   
 2. Nodejs
 * Nodejs is another really useful tool that you will have to download. Go to the download guide below to get started downloading it and make sure to add it to path!  
   
 <a href="https://nodejs.org/en/download"> Download NodeJS here. </a>  
-<a href="https://www.digitalocean.com/community/tutorials/node-js-environment-setup-node-js-installation"> A download guide can be found here. </a>  
+<a href="https://www.digitalocean.com/community/tutorials/node-js-environment-setup-node-js-installation"> Nodejs download guide </a>  
   
 3. ffmpeg
 * ffmpeg is a collaborative project that allows users to handle the conversion of music. The submodule uses it, so you'll need it! The following tutorial shows how you can download it on Windows and add it to path. Although it uses Windows 10 in the tutorial, the same process will work on Windows 11.  
@@ -134,7 +128,7 @@ This is an example of how to list things you need to use the software and how to
 4. Git
 * And of course, you will need Git installed on your computer to download the project. Below is the link to a download guide of Git Bash and how to add it to your enviornment variables so that you can use git commands in any terminal on your computer.  
   
-<a href="https://www.w3schools.com/git/git_install.asp?remote=github"> Git Bash Download </a>  
+<a href="https://www.w3schools.com/git/git_install.asp?remote=github"> Git Bash download guide </a>  
 
 ### Installation
 
@@ -147,12 +141,12 @@ It is critical that you have the recursive tag so that the submodule can be down
    git clone --recursive https://github.com/darcyMaz/YTtoPSP
    ```
 
-2. (A) Create the Python environment for this project.
+2. A) Create the Python environment for this project.
 * Creating your Python environment can be done in different ways. I link two guides below, one that does it via the terminal and one that does it from VSCode. If you want or need to do it a different way, there are plenty of guides to choose from on the internet.  
 <a href="https://www.w3schools.com/python/python_virtualenv.asp"> Python Environment: Terminal </a>  
 <a href="https://code.visualstudio.com/docs/python/environments"> Python Environment: VSCode </a>  
   
-2. (B) Use the global environment.
+2. B) Use the global environment.
 * You don't need to create an environment for your project, especially since this project has only two packages (for now). What you would do instead is, after cloning the repo, type these two commands into the terminal. You will have the packages in the global environment from now on.
     ```sh
     pip install mutagen
