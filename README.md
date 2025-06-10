@@ -115,34 +115,43 @@ This is an example of how to list things you need to use the software and how to
   ```
 
 1. Python 3
-* You will need to have Python 3 downloaded on your computer. There are many installation guides including the one at python.org so if you have no coding experience, this is a great place to start getting familiar with Python and your computer. And make sure to add it to path (environement variables) when downloading!
-
-<a href="https://www.python.org/downloads/"> Download Python here. </a>
-<a href="https://www.digitalocean.com/community/tutorials/install-python-windows-10"> A download guide can be found here. </a>
-
+* You will need to have Python 3 downloaded on your computer. There are many installation guides including the one at python.org so if you have no coding experience, this is a great place to start getting familiar with Python and your computer. And make sure to add it to path (environement variables) when downloading!  
+  
+<a href="https://www.python.org/downloads/"> Download Python here. </a>  
+<a href="https://www.digitalocean.com/community/tutorials/install-python-windows-10"> A download guide can be found here. </a> 
+  
 2. Nodejs
-* Nodejs is another really useful tool that you will have to download. Go to the download guide below to get started downloading it and make sure to add it to path!
-
-<a href="https://nodejs.org/en/download"> Download NodeJS here. </a>
-<a href="https://www.digitalocean.com/community/tutorials/node-js-environment-setup-node-js-installation"> A download guide can be found here. </a>
-
+* Nodejs is another really useful tool that you will have to download. Go to the download guide below to get started downloading it and make sure to add it to path!  
+  
+<a href="https://nodejs.org/en/download"> Download NodeJS here. </a>  
+<a href="https://www.digitalocean.com/community/tutorials/node-js-environment-setup-node-js-installation"> A download guide can be found here. </a>  
+  
 3. ffmpeg
-* ffmpeg is a collaborative project that allows users to handle the conversion of music. The submodule uses it, so you'll need it! The following tutorial shows how you can download it on Windows and add it to path. Although it uses Windows 10 in the tutorial, the same process will work on Windows 11.
-
-<a href="https://phoenixnap.com/kb/ffmpeg-windows"> ffmpeg download guide </a>
+* ffmpeg is a collaborative project that allows users to handle the conversion of music. The submodule uses it, so you'll need it! The following tutorial shows how you can download it on Windows and add it to path. Although it uses Windows 10 in the tutorial, the same process will work on Windows 11.  
+  
+<a href="https://phoenixnap.com/kb/ffmpeg-windows"> ffmpeg download guide </a>  
+  
+4. Git
+* And of course, you will need Git installed on your computer to download the project. Below is the link to a download guide of Git Bash and how to add it to your enviornment variables so that you can use git commands in any terminal on your computer.  
+  
+<a href="https://www.w3schools.com/git/git_install.asp?remote=github"> Git Bash Download </a>  
 
 ### Installation
 
 1. Clone the repo
+* Create a workspace in your computer where you can have your local coding projects. Open that folder in the terminal, in VSCode, or whatever IDE you use for Python and type this command into the terminal.
+
+It is critical that you have the recursive tag so that the submodule can be downloaded.
+
    ```sh
-   git clone https://github.com/darcyMaz/YTtoPSP
+   git clone --recursive https://github.com/darcyMaz/YTtoPSP
    ```
 
 2. (A) Create the Python environment for this project.
-* Creating your Python environment can be done in different ways. I link two guides below, one that does it via the terminal and one that does it from VSCode. If you want or need to do it a different way, there are plenty of guides to choose from on the internet.
-<a href="https://www.w3schools.com/python/python_virtualenv.asp"> Python Environment: Terminal </a>
-<a href="https://code.visualstudio.com/docs/python/environments"> Python Environment: VSCode </a>
-
+* Creating your Python environment can be done in different ways. I link two guides below, one that does it via the terminal and one that does it from VSCode. If you want or need to do it a different way, there are plenty of guides to choose from on the internet.  
+<a href="https://www.w3schools.com/python/python_virtualenv.asp"> Python Environment: Terminal </a>  
+<a href="https://code.visualstudio.com/docs/python/environments"> Python Environment: VSCode </a>  
+  
 2. (B) Use the global environment.
 * You don't need to create an environment for your project, especially since this project has only two packages (for now). What you would do instead is, after cloning the repo, type these two commands into the terminal. You will have the packages in the global environment from now on.
     ```sh
@@ -151,10 +160,9 @@ This is an example of how to list things you need to use the software and how to
     ```
 
 3. Install packages for the podhnologic submodule.
-* The submodule needs to have some packages installed. Go to the terminal, change directories to podhnologic, then type npm install. That's it! Then change directories back to YTtoPSP.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+* The submodule needs to have some packages installed. Go to the terminal, change directories to podhnologic, then type npm install. That's it! Then change directories back to YTtoPSP.  
+  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>  
 
 
 
