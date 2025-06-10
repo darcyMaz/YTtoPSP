@@ -46,8 +46,10 @@
 
 ### Built With
 
-* [![Node][nodejs.org]][nodejs-url]
-* [![Python][python-img]][python-url]
+[![Python][python-img]][python-url]
+[![Mutagen][mutagen-img]][mutagen-link]
+[![PyTube][pytube-img]][pytube-link]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +182,11 @@ jmonster's podhnologic project: [https://github.com/jmonster/podhnologic/tree/ba
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
+
 [python-img]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [python-url]: https://python.org
+[mutagen-link]: https://pypi.org/project/mutagen/
+[mutagen-img]: https://pypi-camo.freetls.fastly.net/b1c76ddde4aec66388fb18b99e7029731bbf1aec/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f71756f646c696265742f6d75746167656e2f6d61737465722f646f63732f696d616765732f6c6f676f2e737667
+[pytubefix-link]: https://pypi.org/project/pytubefix
+[pytubefix-img]: https://pypi-camo.freetls.fastly.net/42d43def1c8634a6c158def4846894bc2afd542b/68747470733a2f2f6173736574732e6e69636b666963616e6f2e636f6d2f67682d7079747562652e6d696e2e737667
+
