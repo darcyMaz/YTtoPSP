@@ -48,7 +48,7 @@
 
 [![Python][python-img]][python-url]
 [![Mutagen][mutagen-img]][mutagen-link]
-[![PyTube][pytube-img]][pytube-link]
+[![PyTube][pytubefix-img]][pytubefix-link]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
