@@ -7,10 +7,10 @@
 <h3 align="center"> YTtoPSP </h3>
 
   <p align="center">
-    A project which allows the user to download audio from YouTube videos in a format playable on PSP, sorted by track number, which includes neccesary metadata.
+    A project which allows the user to download audio from YouTube videos in a format playable on PSP, sorted by track number, which includes user inputted metadata.
       
       
-      
+
   </p>
 </div>
 
@@ -44,21 +44,10 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-A project which allows the user to download audio from YouTube videos in a format playable on PSP, sorted by track number, which includes inputted metadata.
-
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 ### Built With
 
-* [![Node][nodejs.org]][Next-url]
-* [![Python][python.org]][React-url]
+* [![Node][nodejs.org]][nodejs-url]
+* [![Python][python-img]][python-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -191,16 +180,7 @@ jmonster's podhnologic project: [https://github.com/jmonster/podhnologic/tree/ba
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/darcyMaz/YTtoPSP/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/darcyMaz/YTtoPSP/forks
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/darcyMaz/YTtoPSP/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/darcyMaz/YTtoPSP/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/darcyMaz/YTtoPSP/blob/main/LICENSE.txt
-[product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
+[python-img]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
+[python-url]: https://python.org
