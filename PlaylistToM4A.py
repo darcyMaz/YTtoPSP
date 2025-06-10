@@ -4,11 +4,6 @@ import os
 import shutil
 import argparse
 
-# To test:
-# That parser is set up correctly
-# That exclusion list is working
-
-
 def update_m4a_tags(path, track_number, total_tracks, album, artist, title):
     
     audio = MP4(path)
