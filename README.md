@@ -50,7 +50,8 @@
 [![Mutagen][mutagen-img]][mutagen-link]
 [![PyTube][pytubefix-img]][pytubefix-link]
 
-<p>[![podhnologic][podhnologic-img]][podhnologic-link] </p>
+Submodule created by <a href="https://github.com/jmonster">jmonster</a>:
+[![podhnologic][podhnologic-img]][podhnologic-link]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
