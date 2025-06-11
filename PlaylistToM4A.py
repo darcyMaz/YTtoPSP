@@ -100,7 +100,9 @@ def main():
         print("The playlist link is in the wrong format or it cannot find a playlist at the link.")
         return 1
 
-    destination = (args.destination).replace(" ", "_")
+    # This doesn't make any sense right? The output folder will be genuinely different right?
+    # Get rid of the replace.
+    destination = args.destination # ) .replace(" ", "_")
 
     # If these arguments are not given then set them to the empty string.
     if args.artist == None:
@@ -113,6 +115,9 @@ def main():
     else:
         album = args.album
 
+    track_number = 0
+    total_tracks = len(playlist)
+
     exclusion_list = []
     exclusions = False
     # If there is an argument for the exclusion list.
@@ -123,8 +128,6 @@ def main():
         if not len(exclusion_list) == 0:
             exclusions = True
 
-    track_number = 0
-    total_tracks = len(playlist)
     temp_destination = destination + "_temp"
 
     for video in playlist.videos:
@@ -133,7 +136,7 @@ def main():
         track_number += 1
 
         # Skips a track number if it appears on the exclusion list.
-        if exclusions and exclusion_list.contains(track_number):
+        if exclusions and not exclusion_list.count(track_number) == 0:
             continue
 
         # Change track title to have the track number at the start

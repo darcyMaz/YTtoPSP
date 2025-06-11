@@ -137,21 +137,36 @@ Let's get started then.
 
 This example runs PlaylistToM4A.py which downloads the audio from a whole copyright free lofi beats playlist into a folder on user1's computer.
 * ```sh
-    & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=BH-SnQ8J1VU&list=PLfP6i5T0-DkIMLNRwmJpRBs4PJvxfgwBg" -dt "C:/Users/user1/Documents/Music/Lofi_No_Copyright"
+    & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=BH-SnQ8J1VU&list=PLfP6i5T0-DkIMLNRwmJpRBs4PJvxfgwBg" -dt "C:/.../Music/Lofi_No_Copyright"
   ```
 
 This example runs PlaylistToM4A.py which downloads an album and adds as metadata, the album and artist, to each song.
 * ```sh
-    & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=-JhdxgV99Mc&list=PL0FzNhLuNz_VKTfiKrOUL5jsCE_5WBK7J" -dt "C:/Users/user1/Documents/Music/Duke Ellington Greatest Hits" -ar "Duke Ellington" -al "Duke Elington Greatest Hits"
+    & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=-JhdxgV99Mc&list=PL0FzNhLuNz_VKTfiKrOUL5jsCE_5WBK7J" -dt "C:/.../Music/Duke Ellington Greatest Hits" -ar "Duke Ellington" -al "Duke Elington Greatest Hits"
   ```
 
 This example runs PlayListToM4A.py which downloads an album, adds artist as metadata, and excludes a few songs based on the exclusion list.
 * ```sh
-    & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=UPNUp9DwFR0&list=PL45A72A0B85AA8247&pp=0gcJCWMEOCosWNin" -dt "C:/Users/user1/Documents/Music/Beethoven" -ar "Beethoven" -ex "[3,12,30]"
+    & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=UPNUp9DwFR0&list=PL45A72A0B85AA8247&pp=0gcJCWMEOCosWNin" -dt "C:/.../Music/Beethoven" -ar "Beethoven" -ex "[3,12,30]"
   ```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# TrackToM4A.py
+
+Downloads the audio from a single YouTube video to the destination folder. Metadata can also be added to the file.
+
+### Usage
+
+usage: TrackToM4A.py [-h] [-lk YTLINK] [-dt DESTINATION] [-tn TRACK_NUMBER] [-tt TRACK_TOTAL] [-ar ARTIST] [-al ALBUM]
+
+### Examples
+
+This example runs TrackToM4A.py which downloads the audio from a public domain YouTube video and adds the artist's name and the title of the song into the metadata.
+* ```sh
+    & c:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe c:/path_to_folder/YTtoPSP/TrackToM4A.py -lk "https://youtu.be/zCrtErmipXE" -dt "C:/.../Music" -ar "Bessie Smith"
+  ```
 
 
 
