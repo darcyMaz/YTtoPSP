@@ -4,7 +4,7 @@
   
 <div align="center">
 
-<h3 align="center"> YTtoPSP </h3>
+<h1 align="center"> YTtoPSP </h1>
 
   <p align="center">
 
