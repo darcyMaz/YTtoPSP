@@ -109,19 +109,11 @@ Let's get started then.
    git clone --recursive https://github.com/darcyMaz/YTtoPSP
    ```
 
-2. A - Create the Python environment for this project.
+2. Create the Python environment for this project.
 * Creating your Python environment can be done in different ways. I link two guides below, one that does it via the terminal and one that does it from VSCode. If you want or need to do it a different way, there are plenty of guides to choose from on the internet.  
 * <a href="https://www.w3schools.com/python/python_virtualenv.asp"> Python Environment: Terminal </a>  
 * <a href="https://code.visualstudio.com/docs/python/environments"> Python Environment: VSCode </a>  
   
-2. B - Use the global environment.
-* You don't need to create an environment for your project, especially since this project has only two packages (for now). What you would do instead is, after cloning the repo, type these two commands into the terminal. You will have the packages in the global environment from now on.
-  
-    ```sh
-    pip install mutagen
-    pip install pytubefix
-    ```
-* I recommend creating an enironment as you can easily downloaded new packages if there are updates to this project, and you won't run into problems recognizing packages.
 
 3. Install packages for the podhnologic submodule.
 * The submodule needs to have some packages installed. Go to the terminal, change directories to podhnologic, then type the line below. That's it! Then change directories back to YTtoPSP.  
@@ -133,6 +125,10 @@ Let's get started then.
 
 
 # PlaylistToM4A.py
+
+### Track Number Note
+
+* Tracks are numbered by their position in the playlist. They are given track numbers in the metadata and numbers at the start of their song titles.
 
 ### Usage
 
