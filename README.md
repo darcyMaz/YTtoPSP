@@ -138,11 +138,9 @@ Let's get started then.
 
 Examples:
 
-* & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=BH-SnQ8J1VU&list=PLfP6i5T0-DkIMLNRwmJpRBs4PJvxfgwBg" -dt "C:/Users/user1/Music/Lofi_No_Copyright"
 
-* ```sh
-    & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" 
-    -lk "https://www.youtube.com/watch?v=BH-SnQ8J1VU&list=PLfP6i5T0-DkIMLNRwmJpRBs4PJvxfgwBg" -dt "C:/Users/user1/Documents/Music/Lofi_No_Copyright"
+* * ```sh
+    & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=BH-SnQ8J1VU&list=PLfP6i5T0-DkIMLNRwmJpRBs4PJvxfgwBg" -dt "C:/Users/user1/Documents/Music/Lofi_No_Copyright"
   ```
 
 * Result: Full playlist of lofi copyright free music downloaded to its own folder on user1's computer.
