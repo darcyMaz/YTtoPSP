@@ -7,9 +7,10 @@
 <h3 align="center"> YTtoPSP </h3>
 
   <p align="center">
+
     A project which allows the user to download audio from YouTube videos in a format playable on PSP, sorted by track number, which includes user inputted metadata.
       
-      
+    Audio downloaded from YouTube is of the M4A filetype. The PSP is able to play (among other file types) M4A with the codec AAC 266kbps and sampling frequency 44.100 kHz. So, this is what I have chosen for this project.
 
   </p>
 </div>
@@ -34,8 +35,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -47,9 +46,11 @@
 ### Built With
 
 [![Python][python-img]][python-url]
+  
+  
 [![Mutagen][mutagen-img]][mutagen-link]
 [![PyTube][pytubefix-img]][pytubefix-link]
-
+  
 Submodule created by <a href="https://github.com/jmonster">jmonster</a>:
 [![podhnologic][podhnologic-img]][podhnologic-link]
 
@@ -130,20 +131,28 @@ Let's get started then.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>  
 
 
+# PlaylistToM4A.py
 
-<!-- USAGE EXAMPLES -->
 ### Usage
 
 * usage: PlaylistToM4A.py [-h] [-lk YTLINK] [-dt DESTINATION] [-ar ARTIST] [-al ALBUM] [-ex EXCLUDE_LIST]
 
 ### Examples
 
-
+This example runs PlaylistToM4A.py which downloads the audio from a whole copyright free lofi beats playlist into a folder on user1's computer.
 * ```sh
     & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=BH-SnQ8J1VU&list=PLfP6i5T0-DkIMLNRwmJpRBs4PJvxfgwBg" -dt "C:/Users/user1/Documents/Music/Lofi_No_Copyright"
   ```
 
+This example runs PlaylistToM4A.py which downloads an album and adds as metadata, the album and artist, to each song.
+* ```sh
+    & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=-JhdxgV99Mc&list=PL0FzNhLuNz_VKTfiKrOUL5jsCE_5WBK7J" -dt "C:/Users/user1/Documents/Music/Duke Ellington Greatest Hits" -ar "Duke Ellington" -al "Duke Elington Greatest Hits"
+  ```
 
+This example runs PlayListToM4A.py which downloads an album, adds artist as metadata, and excludes a few songs based on the exclusion list.
+* ```sh
+    & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=UPNUp9DwFR0&list=PL45A72A0B85AA8247&pp=0gcJCWMEOCosWNin" -dt "C:/Users/user1/Documents/Music/Beethoven" -ar "Beethoven" -ex "[3,12,30]"
+  ```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
