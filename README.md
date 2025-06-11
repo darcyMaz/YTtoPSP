@@ -76,7 +76,8 @@ Let's get started then.
 * You will need to have Python 3 downloaded on your computer. There are many installation guides including the one at python.org so if you have no coding experience, this is a great place to start getting familiar with Python and your computer. And make sure to add it to path (environement variables) when downloading!  
   
 * <a href="https://www.python.org/downloads/"> Download Python here. </a>  
-* <a href="https://www.digitalocean.com/community/tutorials/install-python-windows-10"> Python download guide </a> 
+* <a href="https://www.digitalocean.com/community/tutorials/install-python-windows-10"> Python Windows download guide </a> 
+* <a href="https://www.dataquest.io/blog/installing-python-on-mac/"> Python Mac download guide </a>
   
 2. Nodejs
 * Nodejs is another really useful tool that you will have to download. Go to the download guide below to get started downloading it and make sure to add it to path!  
@@ -87,7 +88,8 @@ Let's get started then.
 3. ffmpeg
 * ffmpeg is a collaborative project that allows users to handle the conversion of music. The submodule uses it, so you'll need it! The following tutorial shows how you can download it on Windows and add it to path. Although it uses Windows 10 in the tutorial, the same process will work on Windows 11.  
   
-* <a href="https://phoenixnap.com/kb/ffmpeg-windows"> ffmpeg download guide </a>  
+* <a href="https://phoenixnap.com/kb/ffmpeg-windows"> ffmpeg windows download guide </a>  
+* <a href="https://phoenixnap.com/kb/ffmpeg-mac"> ffmpeg mac download guide </a>
   
 4. Git
 * And of course, you will need Git installed on your computer to download the project. Below is the link to a download guide of Git Bash and how to add it to your enviornment variables so that you can use git commands in any terminal on your computer.  
@@ -120,7 +122,10 @@ Let's get started then.
 * I recommend creating an enironment as you can easily downloaded new packages if there are updates to this project, and you won't run into problems recognizing packages.
 
 3. Install packages for the podhnologic submodule.
-* The submodule needs to have some packages installed. Go to the terminal, change directories to podhnologic, then type npm install. That's it! Then change directories back to YTtoPSP.  
+* The submodule needs to have some packages installed. Go to the terminal, change directories to podhnologic, then type the line below. That's it! Then change directories back to YTtoPSP.  
+    ```sh
+    npm install
+    ```
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>  
 
@@ -129,9 +134,19 @@ Let's get started then.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+* usage: PlaylistToM4A.py [-h] [-lk YTLINK] [-dt DESTINATION] [-ar ARTIST] [-al ALBUM] [-ex EXCLUDE_LIST]
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Examples:
+
+* & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=BH-SnQ8J1VU&list=PLfP6i5T0-DkIMLNRwmJpRBs4PJvxfgwBg" -dt "C:/Users/user1/Music/Lofi_No_Copyright"
+
+* ```sh
+    & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=BH-SnQ8J1VU&list=PLfP6i5T0-DkIMLNRwmJpRBs4PJvxfgwBg" -dt "C:/Users/user1/Documents/Music/Lofi_No_Copyright"
+  ```
+
+* Result: Full playlist of lofi copyright free music downloaded to its own folder on user1's computer.
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
