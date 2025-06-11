@@ -10,9 +10,10 @@
 
     A project which allows the user to download audio from YouTube videos in a format playable on PSP, sorted by track number, which includes user inputted metadata.
       
-    Audio downloaded from YouTube is of the M4A filetype. The PSP is able to play (among other file types) M4A with the codec AAC 266kbps and sampling frequency 44.100 kHz. So, this is what I have chosen for this project.
+    Audio downloaded from YouTube is of the M4A filetype. The PSP is able to play (among other file types) M4A with the codec AAC 266kbps and sampling frequency 44 100 kHz. So, this is what I have chosen for this project.
 
   </p>
+
 </div>
 
 
