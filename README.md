@@ -84,7 +84,7 @@ Let's get started then.
 * Nodejs is another really useful tool that you will have to download. Go to the download guide below to get started downloading it and make sure to add it to path!  
   
 * <a href="https://nodejs.org/en/download"> Download NodeJS here. </a>  
-* <a href="https://www.digitalocean.com/community/tutorials/node-js-environment-setup-node-js-installation"> Nodejs download guide </a>  
+* <a href="https://www.digitalocean.com/community/tutorials/node-js-environment-setup-node-js-installation"> Nodejs download guide, both Windows and Mac </a>  
   
 3. ffmpeg
 * ffmpeg is a collaborative project that allows users to handle the conversion of music. The submodule uses it, so you'll need it! The following tutorial shows how you can download it on Windows and add it to path. Although it uses Windows 10 in the tutorial, the same process will work on Windows 11.  
@@ -131,7 +131,18 @@ Let's get started then.
 
 ### Usage
 
-* usage: PlaylistToM4A.py [-h] [-lk YTLINK] [-dt DESTINATION] [-ar ARTIST] [-al ALBUM] [-ex EXCLUDE_LIST]
+usage: PlaylistToM4A.py [-h] [-lk YTLINK] [-dt DESTINATION] [-ar ARTIST] [-al ALBUM] [-ex EXCLUDE_LIST]
+
+options:
+  -h, --help            show this help message and exit
+  -lk, --ytlink YTLINK  YouTube Playlist Link
+  -dt, --destination DESTINATION
+                        Destination Folder
+  -ar, --artist ARTIST  Artist. The individual, group, band, etc.
+  -al, --album ALBUM    Title of the album.
+  -ex, --exclude_list EXCLUDE_LIST
+                        List of integers of any songs you would like to exclude from being downloaded. Useful for playlists that include an extra video that     
+                        includes every song.
 
 ### Examples
 
@@ -147,7 +158,7 @@ This example runs PlaylistToM4A.py which downloads an album and adds as metadata
 
 This example runs PlayListToM4A.py which downloads an album, adds artist as metadata, and excludes a few songs based on the exclusion list.
 * ```sh
-    & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=UPNUp9DwFR0&list=PL45A72A0B85AA8247&pp=0gcJCWMEOCosWNin" -dt "C:/.../Music/Beethoven" -ar "Beethoven" -ex "[3,12,30]"
+    & "C:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe" "C:/path_to_folder/YTtoPSP/PlaylistToM4A.py" -lk "https://www.youtube.com/watch?v=UPNUp9DwFR0&list=PL45A72A0B85AA8247&pp=0gcJCWMEOCosWNin" -dt "C:/.../Music/Beethoven" -ar "Beethoven" -ex "[3,12,30]"
   ```
 
 
@@ -161,12 +172,27 @@ Downloads the audio from a single YouTube video to the destination folder. Metad
 
 usage: TrackToM4A.py [-h] [-lk YTLINK] [-dt DESTINATION] [-tn TRACK_NUMBER] [-tt TRACK_TOTAL] [-ar ARTIST] [-al ALBUM]
 
+options:
+  -h, --help            show this help message and exit
+  -lk, --ytlink YTLINK  YouTube Video Link.
+  -dt, --destination DESTINATION
+                        Destination Folder.
+  -tn, --track_number TRACK_NUMBER
+                        Track number in its respective playlist or album
+  -tt, --track_total TRACK_TOTAL
+                        Number of tracks in this album or a playlist
+  -ar, --artist ARTIST  Artist. The individual, group, band, etc.
+  -al, --album ALBUM    Title of the album.
+
 ### Examples
 
 This example runs TrackToM4A.py which downloads the audio from a public domain YouTube video and adds the artist's name and the title of the song into the metadata.
 * ```sh
     & c:/path_to_folder/YTtoPSP/.venv/Scripts/python.exe c:/path_to_folder/YTtoPSP/TrackToM4A.py -lk "https://youtu.be/zCrtErmipXE" -dt "C:/.../Music" -ar "Bessie Smith"
   ```
+
+
+
 
 
 

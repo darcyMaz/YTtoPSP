@@ -123,15 +123,14 @@ def main():
 
     if output.returncode == 0:
         print("Track created successfully in the destination folder {}".format(destination))
+        rm_temp_folder(temp_destination)
+        return 0
     else:
         print("Error running the pudhnologic subdirectory.")
         print(output.stdout)
         print(output.stderr)
         rm_temp_folder(temp_destination)
         return 1
-
-    rm_temp_folder(temp_destination)
-    return 0
     
 
 if __name__ == "__main__":

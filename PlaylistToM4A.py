@@ -3,6 +3,7 @@ from pytubefix import Playlist
 import os
 import shutil
 import argparse
+import subprocess
 
 def update_m4a_tags(path, track_number, total_tracks, album, artist, title):
     
@@ -35,6 +36,12 @@ def update_m4a_tags(path, track_number, total_tracks, album, artist, title):
         tags["\xa9ART"] = artist
 
     tags.save(path)
+
+def rm_temp_folder(temp_folder_path):
+    try:
+        shutil.rmtree(temp_folder_path)
+    except:
+        print("Temp directory could not be removed.\nThere is no danger if you delete it on your own. The audio file in this folder won't play on your PSP (at least not mine) but they still work.")
 
 # Function which builds the exclusion list, checking if the input is invalid.
 # Returns [] for invalid inputs.
@@ -160,16 +167,19 @@ def main():
         
     # Fix the codec for all audio files.
     # The codec at this point is M4A AAC 0 kbps but should be M4A AAC 256 kbps
-    system_command = "node ./podhnologic/index.js --input " + temp_destination + " --output " + destination + " --codec aac"
-    os.system(system_command)
+    sys_command_list = ['node', './podhnologic/index.js', '--input', temp_destination, '--output', destination, '--codec', 'aac']
+    output = subprocess.run(sys_command_list, capture_output=True)
 
-    # delete temp folder
-    try:
-        shutil.rmtree(temp_destination)
-    except:
-        print("Temp directory could not be removed.\nThere is no danger if you delete it on your own. Those audio files will not play on your PSP (at least not mine) but they still work.")
-
-    return 0
+    if output.returncode == 0:
+        print("Tracks downloaded successfully in the destination folder {}".format(destination))
+        rm_temp_folder(temp_destination)
+        return 0
+    else:
+        print("Error running the pudhnologic subdirectory.")
+        print(output.stdout)
+        print(output.stderr)
+        rm_temp_folder(temp_destination)
+        return 1
 
 if __name__ == '__main__':
     main()
