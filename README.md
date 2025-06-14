@@ -21,10 +21,7 @@ Audio downloaded from YouTube is of the M4A filetype. The PSP is able to play (a
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+      <a href="#built-with">About The Project</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -69,7 +66,6 @@ But don't worry! If you have limited coding experience, it's not too complicated
 Be warned, at this stage I haven't tested this project on Mac or Linux. This is because I'm just one person and don't have access to those! So proceed with caution, try to setup the project, and report any issues either through GitHub or just by emailing me (darcy.mazloum@gmail.com).
 
 Let's get started then.
-
 
 ### Prerequisites
 
