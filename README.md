@@ -32,14 +32,14 @@ Audio downloaded from YouTube is of the M4A filetype. The PSP is able to play (a
     </li>
     <li> <a href="#PlaylisTtoM4A"> PlaylistToM4A.py </a> 
       <ul>
-        <li><a href="#usage_play">Usage</a></li>
-        <li><a href="#examples_play">Examples</a></li>
+        <li><a href="#usage-playlisttom4a">Usage</a></li>
+        <li><a href="#examples-playlisttom4a">Examples</a></li>
       </ul>
     </li>
-    <li> <a href="#track"> TrackToM4A.py </a> 
+    <li> <a href="#TrackToM4A"> TrackToM4A.py </a> 
       <ul>
-        <li><a href="#usage_track">Usage</a></li>
-        <li><a href="#examples_track">Examples</a></li>
+        <li><a href="#usage-tracktom4a">Usage</a></li>
+        <li><a href="#examples-tracktom4a">Examples</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>
@@ -136,7 +136,7 @@ Let's get started then.
 
 * Tracks are numbered by their position in the playlist. They are given track numbers in the metadata and numbers at the start of their song titles.
 
-### Usage
+### Usage PlaylistToM4A
 
 usage: PlaylistToM4A.py [-h] [-lk YTLINK] [-dt DESTINATION] [-ar ARTIST] [-al ALBUM] [-ex EXCLUDE_LIST]
 
@@ -151,7 +151,7 @@ options:
                         List of integers of any songs you would like to exclude from being downloaded. Useful for playlists that include an extra video that     
                         includes every song.
 
-### Examples
+### Examples PlaylistToM4a
 
 This example runs PlaylistToM4A.py which downloads the audio from a whole copyright free lofi beats playlist into a folder on user1's computer.
 * ```sh
@@ -175,7 +175,7 @@ This example runs PlayListToM4A.py which downloads an album, adds artist as meta
 
 Downloads the audio from a single YouTube video to the destination folder. Metadata can also be added to the file.
 
-### Usage
+### Usage TrackToM4A
 
 usage: TrackToM4A.py [-h] [-lk YTLINK] [-dt DESTINATION] [-tn TRACK_NUMBER] [-tt TRACK_TOTAL] [-ar ARTIST] [-al ALBUM]
 
@@ -191,7 +191,7 @@ options:
   -ar, --artist ARTIST  Artist. The individual, group, band, etc.
   -al, --album ALBUM    Title of the album.
 
-### Examples
+### Examples TrackToM4A
 
 This example runs TrackToM4A.py which downloads the audio from a public domain YouTube video and adds the artist's name and the title of the song into the metadata.
 * ```sh
