@@ -21,7 +21,7 @@ Audio downloaded from YouTube is of the M4A filetype. The PSP is able to play (a
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#built-with">About The Project</a>
+      <a href="#built-with">Built With</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -30,7 +30,18 @@ Audio downloaded from YouTube is of the M4A filetype. The PSP is able to play (a
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li> <a href="#playlisttom4a.py"> PlaylistToM4A.py </a> 
+      <ul>
+        <li><a href="#usage_play">Usage</a></li>
+        <li><a href="#examples_play">Examples</a></li>
+      </ul>
+    </li>
+    <li> <a href="#track"> TrackToM4A.py </a> 
+      <ul>
+        <li><a href="#usage_track">Usage</a></li>
+        <li><a href="#examples_track">Examples</a></li>
+      </ul>
+    </li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
