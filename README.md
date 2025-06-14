@@ -30,7 +30,7 @@ Audio downloaded from YouTube is of the M4A filetype. The PSP is able to play (a
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li> <a href="#playlisttom4a.py"> PlaylistToM4A.py </a> 
+    <li> <a href="#PlaylisTtoM4A"> PlaylistToM4A.py </a> 
       <ul>
         <li><a href="#usage_play">Usage</a></li>
         <li><a href="#examples_play">Examples</a></li>
@@ -130,7 +130,7 @@ Let's get started then.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>  
 
 
-# PlaylistToM4A.py
+# PlaylistToM4A
 
 ### Track Number Note
 
