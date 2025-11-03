@@ -1,9 +1,13 @@
 from mutagen.mp4 import MP4
 from pytubefix import Playlist
-import os
+from pytubefix import exceptions
 import shutil
 import argparse
 import subprocess
+
+from pytubefix.innertube import _default_clients
+_default_clients["ANDROID_MUSIC"] = _default_clients["WEB"]
+
 
 def update_m4a_tags(path, track_number, total_tracks, album, artist, title):
     
@@ -97,7 +101,9 @@ def main():
         return 1
 
     link = args.ytlink
-    playlist = Playlist(link.strip())
+    playlist = Playlist(link.strip())#, 
+        #use_oauth=True,
+        #allow_oauth_cache=True)
 
     # Checking the length of the playlist, when the link was invalid, creates an error.
     # Catch this error, tell the user the link is invalid, then end the program.
@@ -107,9 +113,7 @@ def main():
         print("The playlist link is in the wrong format or it cannot find a playlist at the link.")
         return 1
 
-    # This doesn't make any sense right? The output folder will be genuinely different right?
-    # Get rid of the replace.
-    destination = args.destination # ) .replace(" ", "_")
+    destination = args.destination
 
     # If these arguments are not given then set them to the empty string.
     if args.artist == None:
@@ -155,8 +159,26 @@ def main():
             # Else just add it w/o a leading zero
             video.title = str(track_number) + " - " + video.title
 
+
         # extract only audio
-        audio = video.streams.filter(only_audio=True).first()
+        try:
+            audio = video.streams.filter(only_audio=True).first()
+        # If the audio cannot be obtained from YouTube, skip or exit is prompted as the choices.
+        except exceptions.AgeRestrictedError as age_err:
+            print("Extracting the audio from YouTube for this video did not work probably because of an age restriction on the video.")
+            print("Song that didn't work: " + video.title + ".")
+            skip_or_exit = input("Press s to skip this song and download the rest of the track or press anything else to end the program.\nIf you choose to exit, you will see the error: ")
+            if skip_or_exit == "s": 
+                continue
+            else:
+                raise age_err
+        except Exception as err:
+            print("Extracting the audio from YouTube did not work because of an error not expected by the dev (also could be HTTP exception I didn't code that yet).")
+            skip_or_exit = input("Press s to skip this song and download the rest of the track or press anything else to end the program completely.\nIf you choose to exit, you will see the error: ")
+            if skip_or_exit == "s": 
+                continue
+            else:
+                raise err
 
         # download the file
         out_file = audio.download(output_path=temp_destination)
