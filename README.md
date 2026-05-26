@@ -74,7 +74,7 @@ This project is built in Python and uses a submodule (someone else's free to use
 
 But don't worry! If you have limited coding experience, it's not too complicated to get running.
 
-Be warned, at this stage I haven't tested this project on Mac or Linux. This is because I'm just one person and don't have access to those! So proceed with caution, try to setup the project, and report any issues either through GitHub or just by emailing me (darcy.mazloum@gmail.com).
+Be warned, at this stage I haven't tested this project on Mac or Linux. This is because I'm just one person and don't have access to those! So proceed with caution, try to setup the project, and report any issues either through GitHub.
 
 Let's get started then.
 
