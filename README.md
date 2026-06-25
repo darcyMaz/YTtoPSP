@@ -232,7 +232,7 @@ Basically, you can use and remix this project with credit to the author, but you
 <!-- CONTACT -->
 ## Contact
 
-Darcy Mazloum - darcy.mazloum@gmail.com
+Darcy Mazloum - darcymazloum.com
 
 Project Link: [https://github.com/darcyMaz/YTtoPSP](https://github.com/darcyMaz/YTtoPSP)
 
