@@ -66,9 +66,7 @@ def main():
         return 1
 
     link = args.ytlink
-    video = YouTube(link.strip(), 
-        use_oauth=True,
-        allow_oauth_cache=True)
+    video = YouTube(link.strip(), 'WEB')
 
     # If there is an error here, then the 
     try:

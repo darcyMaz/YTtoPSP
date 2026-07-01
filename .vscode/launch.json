@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": ["-lk", "https://www.youtube.com/watch?v=mkmu-4teBmQ&list=OLAK5uy_k_hYRKlxexiWZO4QJZ78oZgtb_QlW1P7Y", "-dt", "C:\\Users\\damaz\\OneDrive\\Desktop\\Music\\Saint Levant", "-ar", "Saint Levant", "-al", "From Gaze, With Love"]
+        }
+    ]
+}
